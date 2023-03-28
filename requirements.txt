@@ -1,0 +1,7 @@
+Flask
+sklearn
+numpy
+pandas
+matplotlib
+seaborn
+pandas_profiling
