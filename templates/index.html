@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ML PROJECT</title>
+</head>
+<body>
+    <h4>INCOME PREDICTION</h4>
+    <form class="form" method="post" action="/predict">
+        <label>Age</label><br>
+        <input type="text" name='age'><br><br>
+
+        <label>Workclass</label><br>
+        <input type="text" name='workclass'><br><br>
+
+        <label>Education</label><br>
+        <input type="text" name='education'><br><br>
+
+        <label>Marital Status</label><br>
+        <input type="text" name='marital_status'><br><br>
+
+        <label>Occupation</label><br>
+        <input type="text" name='occupation'><br><br>
+
+        <label>Hours per week</label><br>
+        <input type="text" name='hours_per_week'><br><br>
+
+        <label>Sex</label><br>
+        <label>
+            <input type="text" name='sex'>
+        </label><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+    {%if result%}
+        <p>{{result}}</p>
+    {% endif %}
+</body>
+</html>
