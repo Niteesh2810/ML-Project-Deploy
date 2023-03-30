@@ -23,7 +23,7 @@ def predict():
     col=["Age", "hours_per_week", "Workclass", "Education", "marital_status", "occupation", "sex"]
     output = model.predict(pd.DataFrame(np.array([Age, hours_per_week, Workclass, Education, marital_status, occupation, sex]).reshape(1, 7),columns=col))[0]
     if output == 1:
-        result = "INCOME IS >=50K"
+        result = "INCOME IS >50K"
     else:
         result = "INCOME IS <=50K"
     return render_template('index.html', result=result)
